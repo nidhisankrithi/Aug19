@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="5" parallel="tests" name="TestFF(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="http://localhost:4444/wd/hub"/>
+    <classes>
+      <class name="aug12.MultiplebrowserandSystem">
+        <methods>
+          <include name="testA" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- aug12.MultiplebrowserandSystem -->
+    </classes>
+  </test> <!-- TestFF(failed) -->
+</suite> <!-- Failed suite [Suite] -->
